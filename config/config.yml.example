@@ -1,0 +1,14 @@
+# 日志相关配置
+logconfig:
+  #Level 最低日志等级，DEBUG<INFO<WARN<ERROR<FATAL 例如：info-->收集info等级以上的日志
+  level: debug
+  #日志按配置的时间分目录，如按年月日20060101分为一个目录，而第二天20060102会分为第二个目录，同理也可以按年份、月份等分目录
+  timesep: "20060101"
+  #max-size 进行切割之前，日志文件的最大大小(MB为单位)，默认为100MB
+  maxsize: 30
+  #max_backups 是要保留的旧日志文件的最大数量。默认是保留所有旧的日志文件（尽管 MaxAge 可能仍会导致它们被删除。）
+  maxbackups: 30
+  #max_age 是根据文件名中编码的时间戳保留旧日志文件的最大天数。
+  maxage: 30
+  #是否开启压缩
+  compress: true
